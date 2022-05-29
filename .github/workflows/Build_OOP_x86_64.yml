@@ -93,7 +93,15 @@ jobs:
     
 
           
-
+    - name: Import external feeds - adguardhome
+      working-directory: ./openwrt
+      run: |
+        git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+        
+    - name: Import external feeds - openclash
+      working-directory: ./openwrt
+      run: |
+        git clone https://github.com/vernesong/OpenClash.git package/openclash
     
 
     - name: Configuration Customization - Build_x86_64
