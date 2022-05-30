@@ -64,7 +64,7 @@ jobs:
         REPO_URL: https://github.com/immortalwrt/immortalwrt
         REPO_BRANCH: openwrt-21.02
       run: |
-        git clone --depth 1 $REPO_URL -b --single-branch $REPO_BRANCH openwrt
+        git clone -b openwrt-21.02 --single-branch https://github.com/immortalwrt/immortalwrt openwrt
         cd openwrt
         
         
