@@ -81,6 +81,11 @@ jobs:
     #    git clone https://github.com/xiaorouji/openwrt-passwall.git package/lienol
     #    git clone "your_github_link" package/"your_folder_name"      
 
+    - name: Import external feeds - fullconenat
+      working-directory: ./openwrt
+      run: |
+        git clone -b master --single-branch https://github.com/LGA1150/openwrt-fullconenat package/fullconenat
+
     - name: Import external feeds - JerryKuKu Argon
       working-directory: ./openwrt
       run: |
