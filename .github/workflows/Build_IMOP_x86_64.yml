@@ -4,7 +4,7 @@
 # Author: eSirPlayground
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
-#1
+
 name: Build_x86_64_imop
 
 on: 
@@ -12,12 +12,12 @@ on:
     types: [published]
 
 
-  push:
-    branches: 
-      - master
+  #push:
+    #branches: 
+      #- master
   
-  #schedule:
-  #  - cron: 0 8 * * 5
+  schedule:
+    - cron: 0 0 1 */1 *
   
   #watch:
   #  types: [started]
